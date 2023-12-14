@@ -1,8 +1,10 @@
-<header class="page-header palette-1" style="border-bottom: 2px rgba(255, 166, 0, 0.432) solid">
+<header class="page-header palette-1">
+  <div class="container-fluid">
+    <h2 class="no-margin-bottom">Movie Details</h2>
+  </div>
+</header>
 
-<div class="table-agile-info" style="background: url(https://wallpaperaccess.com/full/1788459.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;">
+<div class="table-agile-info">
 	<div class="container-fluid my-3">
 		<?php if ($this->session->flashdata('message')!=null) {
 		echo "<br><div class='alert alert-success alert-dismissible fade show' role='alert'>"
@@ -11,11 +13,13 @@
 			</button> </div>";
 		} ?>
 		<br>
-		<div class="card rounded-0 shadow bg-transparent">
-			<div class="card-header bg-transparent">
-				<a href="#add" data-toggle="modal" class="btn btn-warning btn-sm rounded-3 p-2 pull-left" style="border: none; color: white;"><i class="fa fa-plus"></i> Add New Movie</a>
+		<div class="card rounded-0 shadow">
+			<div class="card-header palette-1">
+				<a href="#add" data-toggle="modal" class="btn btn-warning btn-sm rounded-3 p-2 pull-right" style="border: none; color: white;"><i class="fa fa-plus"></i> Add New Movie</a>
 			</div>
-			<div class="card-body">
+			<div class="card-body" style="background: url(https://wallpaperaccess.com/full/1788459.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;">
 				<div class="d-flex flex-wrap justify-content-between" style="gap: 5px;">
 					<?php $no=0; foreach ($get_movie as $movie) : $no++;?>
 						<div class="card text-white bg-dark p-2" style="width: 14rem;">
@@ -37,53 +41,10 @@
 								</div>
 							</div>
 						</div>
-						
+
 					<?php endforeach ?>
 				</div>
-				<table class="table table-hover table-bordered" id="example" style="background-color: #eef9f0; border-radius: 10px; overflow: hidden;" ui-options=ui-options="{
-					&quot;paging&quot;: {
-					&quot;enabled&quot;: true
-					},
-					&quot;filtering&quot;: {
-					&quot;enabled&quot;: true
-					},
-					&quot;sorting&quot;: {
-					&quot;enabled&quot;: true
-					}}">
-					<thead style="background-color: orange; color:white;">
-						<tr>
-							<td>#</td>
-							<td>Movie Title</td>
-							<td>Cover</td>
-							<td>Year</td>
-							<td>Price</td>
-							<td>genre</td>
-							<td>Publisher</td>
-							<td>director</td>
-							<td>seat</td>
-							<td>Action</td>
-						</tr></thead>
-						<tbody style="background-color: white;">
-						<?php $no=0; foreach ($get_movie as $movie) : $no++;?>
-
-						<tr>
-							<td><?=$no?></td>
-							<td><?=$movie->movie_title?></td>
-							<td><img src="<?=base_url('assets/gambar/'.$movie->movie_img)?>" style="width:40px"></td>
-							<td><?=$movie->year?></td>
-							<td>$<?=number_format($movie->price)?></td>
-							<td><?=$movie->genre_name?></td>
-							<td><?=$movie->publisher?></td>
-							<td><?=$movie->director?></td>
-							<td><?=$movie->seat?></td>
-							<td class="text-center">
-								<a href="#edit" onclick="edit('<?=$movie->movie_code?>')" class="btn btn-primary btn-sm rounded-0" data-toggle="modal"><i class="fa fa-pencil"></i></a>
-								<a href="<?=base_url('index.php/movie/hapus/'.$movie->movie_code)?>" onclick="return confirm('Are you sure to delete this movie?')" class="btn btn-danger btn-sm rounded-0"><i class="fa fa-trash"></i></a>
-							</td>
-						</tr>
-					<?php endforeach ?>
-					</tbody>
-				</table>
+				
 			</div>
 		</div>
 	</div>
@@ -233,7 +194,7 @@
 					</div>
 				</form>
 			</div>
-			
+
 		</div>
 	</div>
 </div>

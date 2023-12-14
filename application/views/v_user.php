@@ -7,7 +7,7 @@
 <div class="table-agile-info p-5">
 	<div class="panel panel-default">
 
-		<div class="container-fluid">
+		<div class="container-fluid" >
 			<?php if ($this->session->flashdata('message')!=null) {
 			echo "<br><div class='alert alert-success alert-dismissible fade show' role='alert'>"
 				.$this->session->flashdata('message')."<button type='button' class='close' data-dismiss='alert' aria-label='Close'>
@@ -98,7 +98,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="modal fade" id="edit">
+	<div class="modal fade" id="edit" style="color:black !important;">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">

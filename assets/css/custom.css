@@ -1,10 +1,7 @@
 /* your styles go here */
 .palette-1{
     background-color: rgb(15, 15, 15) !important;
-    color: white !important;
+    color: gray !important;
 }
-.bg-black{
-    background-color: black !important;
-    
-}
+
 

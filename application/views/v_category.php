@@ -69,7 +69,7 @@
 				</button>
 			</div>
 			<form action="<?=base_url('index.php/category/add')?>" method="post">
-				<div class="modal-body">
+				<div class="modal-body" style="color:black;">
 					<div class="form-group row">
 						<div class="col-sm-3 offset-1"><label>genre Code</label></div>
 						<div class="col-sm-7">
