@@ -6,11 +6,13 @@
 
 <div class="container-fluid">
 	<br>
-	<div class="row">
+	<div class="row" style="background: url(https://wallpaperaccess.com/full/1788459.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;">
 		<div class="col-md-12">
-			<div class="d-flex flex-wrap" style="gap: 5px; color:white;">
+			<div class="d-flex flex-wrap" style="gap: 5px; color:white; ">
 				<?php $no=0; foreach ($get_history as $history) : $no++;?>
-				<div class="row p-2 m-3 mx-5 w-100" style="background-color: black; border-radius: 10px; border: 3px solid orange;">
+				<div class="row p-2 m-3 mx-5 w-100" style="background-color: rgba(0, 0, 0, 0.398); border-radius: 10px; border: 3px solid orange;">
 					<div class="col col-lg-4 col-sm-12 col-12 text-center" style="background: url(<?=base_url('assets/gambar/ticket-bg-2.jpg')?>); background-size: contain; border-radius: 10px 0 0 10px; overflow: hidden;">
 						<img src="<?=base_url('assets/gambar/ticket.png')?>" alt="" style="max-height: 200px;">
 					</div>
@@ -25,7 +27,7 @@
 							<p style="margin:0;">Movie : <?=$history->moviename?></p>
 							</div>
 							<p> <?=$history->moviename?> | <?=$history->user_code?> | $<?=number_format($history->total)?></p>
-							<p>⭐ 5.0</p>
+							
 						</div>
 						<img src="./source/images/qr-code.png" alt="" style="max-height: 150px; background-color:white;">
 					</div>
@@ -53,7 +55,7 @@
 						<td>Amount</td>
 						<td>Payment</td>
 					</tr></thead>
-					<tbody style="background-color: white;">
+					<tbody  style="background-color: orange;">
 					<?php $no=0; foreach ($get_history as $history) : $no++;?>
 
 					<tr>
