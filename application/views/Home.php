@@ -1,4 +1,4 @@
-<header class="page-header palette-1" style="border-bottom: 2px rgba(255, 166, 0, 0.432) solid">
+<header class="page-header palette-1" style="border-bottom: 2px rgba(175, 237, 255, 0.432) solid">
 	<div class="container-fluid">
 	  	<h2 class="panel-title">Dashboard</h2>
 	</div>

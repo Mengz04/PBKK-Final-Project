@@ -1,6 +1,8 @@
 <header class="page-header palette-1" style="border-bottom: 2px rgba(255, 166, 0, 0.432) solid">
 
-<div class="table-agile-info">
+<div class="table-agile-info" style="background: url(https://wallpaperaccess.com/full/1788459.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;">
 	<div class="container-fluid my-3">
 		<?php if ($this->session->flashdata('message')!=null) {
 		echo "<br><div class='alert alert-success alert-dismissible fade show' role='alert'>"
@@ -9,12 +11,12 @@
 			</button> </div>";
 		} ?>
 		<br>
-		<div class="card rounded-0 shadow">
-			<div class="card-header">
-				<a href="#add" data-toggle="modal" class="btn btn-warning btn-sm rounded-3 p-2 pull-right" style="border: none; color: white;"><i class="fa fa-plus"></i> Add New Movie</a>
+		<div class="card rounded-0 shadow bg-transparent">
+			<div class="card-header bg-transparent">
+				<a href="#add" data-toggle="modal" class="btn btn-warning btn-sm rounded-3 p-2 pull-left" style="border: none; color: white;"><i class="fa fa-plus"></i> Add New Movie</a>
 			</div>
 			<div class="card-body">
-				<div class="d-flex flex-wrap" style="gap: 5px;">
+				<div class="d-flex flex-wrap justify-content-between" style="gap: 5px;">
 					<?php $no=0; foreach ($get_movie as $movie) : $no++;?>
 						<div class="card text-white bg-dark p-2" style="width: 14rem;">
 							<img src="<?=base_url('assets/gambar/'.$movie->movie_img)?>" class="card-img-top" alt="..." style="height:300px;">
