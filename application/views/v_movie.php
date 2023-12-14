@@ -1,4 +1,4 @@
-<header class="page-header">
+<header class="page-header palette-1" style="border-bottom: 2px rgba(255, 166, 0, 0.432) solid">
   <div class="container-fluid">
     <h2 class="no-margin-bottom">Movie Details</h2>
   </div>
@@ -97,7 +97,7 @@
 						<div class="form-group row">
 							<div class="col-sm-3 offset-1"><label>genre</label></div>
 							<div class="col-sm-7">
-								<select name="genre" required="form-control" class="form-control">
+								<select name="category" required="form-control" class="form-control">
 									<?php foreach ($genre as $kat): ?>
 										<option value="<?=$kat->genre_code?>">
 											<?=$kat->genre_name ?>

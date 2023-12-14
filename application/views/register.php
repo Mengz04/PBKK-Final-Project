@@ -64,6 +64,7 @@
                       <label for="level" class="control-label text-white">User Role</label>
                       <select type="text" name="level" required class="custom-select">
                           <option>Customer</option>
+                          <option>admin</option>
                       </select> 
                     </div>
                     <div class="d-flex flex-column justify-content-end align-items-center">

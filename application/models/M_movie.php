@@ -23,7 +23,7 @@ class M_movie extends CI_Model {
 						'movie_title'=>$this->input->post('movie_title'),
 						'year'=>$this->input->post('year'),
 						'price'=>$this->input->post('price'),
-						'genre_code'=>$this->input->post('genre'),
+						'genre_code'=>$this->input->post('category'),
 						'publisher'=>$this->input->post('publisher'),
 						'director'=>$this->input->post('director'),
 						'seat'=>$this->input->post('seat')
@@ -34,7 +34,7 @@ class M_movie extends CI_Model {
 						'movie_title'=>$this->input->post('movie_title'),
 						'year'=>$this->input->post('year'),
 						'price'=>$this->input->post('price'),
-						'genre_code'=>$this->input->post('genre'),
+						'genre_code'=>$this->input->post('category'),
 						'movie_img'=>$nama_file,
 						'publisher'=>$this->input->post('publisher'),
 						'director'=>$this->input->post('director'),

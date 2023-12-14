@@ -1,4 +1,4 @@
-<header class="page-header">
+<header class="page-header palette-1" style="border-bottom: 2px rgba(255, 166, 0, 0.432) solid">
   <div class="container-fluid">
     <h2 class="no-margin-bottom">Transaction History</h2>
   </div>
@@ -18,7 +18,7 @@
 		        &quot;sorting&quot;: {
 		          &quot;enabled&quot;: true
 		        }}">
-				<thead style="background-color: #464b58; color:white;">
+				<thead style="background-color: orange; color:white;">
 					<tr>
 						<td>#</td>
 						<td>Customer's Name</td>
