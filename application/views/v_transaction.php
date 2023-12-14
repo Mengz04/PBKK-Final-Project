@@ -1,4 +1,4 @@
-<header class="page-header">
+<header class="page-header palette-1" style="border-bottom: 2px rgba(255, 166, 0, 0.432) solid">
   <div class="container-fluid">
     <h2 class="no-margin-bottom">Sales Transaction</h2>
   </div>
@@ -7,11 +7,11 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-7">
-			<div class="card rouded-0 shadow">
-				<div class="card-header">
-					<div class="card-title mb-0">List of movies</div>
+			<div class="card rounded-0 shadow">
+				<div class="card-header" style="border-bottom: 2px rgba(255, 166, 0, 0.432) solid">
+					<div class="card-title mb-0 text-dark">List of movies</div>
 				</div>
-				<div class="card-body">
+				<div class="card-body" >
 				<table class="table table-hover table-bordered" id="example" style="background-color: #eef9f0; border-radius: 10px; overflow: hidden;">
 						<thead style="background-color: orange; color:white;">
 							<tr>
@@ -46,10 +46,10 @@
 		<div class="col-md-5">
 			<div class="card rounded-0 shadow">
 				<div class="card-header">
-					<div class="card-title mb-0">Cart List</div>
+					<div class="card-title mb-0 text-dark">Cart List</div>
 				</div>
 				<div class="card-body">
-					<form action="<?=base_url('index.php/transaction/save')?>" method="post">
+					<form action="<?=base_url('index.php/transaction/save')?>" method="post" class="text-dark">
 						
 						Payment : <select name="user_code" class="form-control">
 						<option disabled selected>Select Here</option>

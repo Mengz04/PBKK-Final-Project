@@ -1,8 +1,4 @@
-<header class="page-header">
-  <div class="container-fluid">
-    <h2 class="no-margin-bottom">Movie Details</h2>
-  </div>
-</header>
+<header class="page-header palette-1" style="border-bottom: 2px rgba(255, 166, 0, 0.432) solid">
 
 <div class="table-agile-info">
 	<div class="container-fluid my-3">

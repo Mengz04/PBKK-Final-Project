@@ -1,4 +1,4 @@
-<header class="page-header">
+<header class="page-header palette-1" style="border-bottom: 2px rgba(255, 166, 0, 0.432) solid">
   <div class="container-fluid">
     <h2 class="no-margin-bottom">System Users</h2>
   </div>

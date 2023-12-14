@@ -1,4 +1,4 @@
-<header class="page-header">
+<header class="page-header palette-1" style="border-bottom: 2px rgba(255, 166, 0, 0.432) solid">
 	<div class="container-fluid">
 	  	<h2 class="panel-title">Dashboard</h2>
 	</div>
@@ -8,7 +8,7 @@
         if ($this->session->userdata('level') == 'admin') { ?>
 	<section class="dashboard-counts no-padding-bottom">
 	    <div class="container-fluid">
-	      <div class="row py-1">
+	      <div class="row py-1 text-dark">
 	        <!-- Item -->
 	        <div class="col-xl-4 col-sm-4">
 				<div class="card rounded shadow">
@@ -53,7 +53,7 @@
 	        </div>
 		  </div>
 
-		  <div class="row py-1">
+		  <div class="row py-1 text-dark">
 	        <!-- Item -->
 	        <div class="col-xl-4 col-sm-4">
 				<div class="card rounded shadow">
@@ -120,109 +120,105 @@
 	</section>
 		<?php } elseif (($this->session->userdata('level') == 'Customer')) {?>
 			<div class="d-flex flex-wrap justify-content-center">
-				<div class="px-5 py-3">
-					<p>Educational</p>
-					<table class="table table-hover table-bordered" id="example" style="background-color: #eef9f0; border-radius: 10px; overflow: hidden;">
-						<thead style="background-color: orange; color:white;">
-							<tr>
-								<th>Movie Title</th>
-								<th>Movie Cover</th>
-								<th>Price</th>
-								<th>Seat</th>
-								<th>Act.</th>
-							</tr>
-
-						</thead>
+				<div class="px-5 pt-5">
+					<div class="text-center font-weight-bold">Educational</div>
+					<div class="px-5 py-3 d-flex flex-row" style="gap: 25px;">
+						
 						<tbody style="background-color: white;">
-							<?php $no=0; foreach ($get_movie as $movie): if ($no == 6) break; if($movie->genre_name != "Educational") continue; $no++;?>
-								<tr>
-									<td><?=$movie->movie_title?></td>
-									<td><img src="<?=base_url('assets/gambar/'.$movie->movie_img)?>" style="width:40px"></td>
-									<td class="text-right">$<?=$movie->price?></td>
-									<td class="text-right"><?=$movie->seat?></td>
-									<td class="text-center"><a href="<?=base_url('index.php/transaction/addcart/'.$movie->movie_code)?>"><button class="btn btn-outline-primary rounded-0 btn-sm"><span class="fa fa-shopping-cart" aria-hidden="true"></span></button></a></td>
-								</tr>
+							<?php $no=0; foreach ($get_movie as $movie): if ($no == 4) break; if($movie->genre_name != "Educational") continue; $no++;?>
+								<div class="card text-white bg-dark p-1" style="width: 15rem;">
+									<img src="<?=base_url('assets/gambar/'.$movie->movie_img)?>" class="card-img-top" alt="..." style="height: 320px;">
+									<div class="h-100"></div>
+										<div class="card-body">
+										<h5 class="card-title"><?=$movie->movie_title?></h5>
+										<p class="card-text" style="font-size: smaller; color: lightgray;"><span class="font-weight-bold">Ticket Price:</span> $<?=$movie->price?></p>
+										<p class="card-text" style="font-size: smaller; color: lightgray;">Seat Left: <?=$movie->seat?></p>	
+										<div style=" display: flex; justify-content: space-between; align-items: center !important;">
+											<p style="height: 10px !important;">⭐ 5.0</p>
+											<a href="<?=base_url('index.php/transaction/addcart/'.$movie->movie_code)?>"><button class="btn btn-outline-primary rounded-0 btn-sm"><span class="fa fa-shopping-cart" aria-hidden="true"></span></button></a>
+										</div>
+									</div>
+								</div>
 							<?php endforeach ?>
 						</tbody>
-					</table>
+					
+					</div>
+					
 				</div>
 				<div class="px-5 py-3">
-					<p>Fiction</p>
-					<table class="table table-hover table-bordered" id="example" style="background-color: #eef9f0; border-radius: 10px; overflow: hidden;">
-						<thead style="background-color: orange; color:white;">
-							<tr>
-								<th>Movie Title</th>
-								<th>Movie Cover</th>
-								<th>Price</th>
-								<th>seat</th>
-								<th>Act.</th>
-							</tr>
-
-						</thead>
+					<div class="text-center font-weight-bold">Fiction</div>
+					<div class="px-5 py-3 d-flex flex-row" style="gap: 25px;">
+						
 						<tbody style="background-color: white;">
-							<?php $no=0; foreach ($get_movie as $movie): if ($no == 6) break; if($movie->genre_name != "Fiction") continue; $no++;?>
-								<tr>
-									<td><?=$movie->movie_title?></td>
-									<td><img src="<?=base_url('assets/gambar/'.$movie->movie_img)?>" style="width:40px"></td>
-									<td class="text-right">$<?=$movie->price?></td>
-									<td class="text-right"><?=$movie->seat?></td>
-									<td class="text-center"><a href="<?=base_url('index.php/transaction/addcart/'.$movie->movie_code)?>"><button class="btn btn-outline-primary rounded-0 btn-sm"><span class="fa fa-shopping-cart" aria-hidden="true"></span></button></a></td>
-								</tr>
-							<?php endforeach ?>
-						</tbody>
-					</table>
+								<?php $no=0; foreach ($get_movie as $movie): if ($no == 4) break; if($movie->genre_name != "Fiction") continue; $no++;?>
+									<div class="card text-white bg-dark p-1" style="width: 15rem;">
+										<img src="<?=base_url('assets/gambar/'.$movie->movie_img)?>" class="card-img-top" alt="..." style="height: 320px;">
+										<div class="h-100"></div>
+											<div class="card-body">
+											<h5 class="card-title"><?=$movie->movie_title?></h5>
+											<p class="card-text" style="font-size: smaller; color: lightgray;"><span class="font-weight-bold">Ticket Price:</span> $<?=$movie->price?></p>
+											<p class="card-text" style="font-size: smaller; color: lightgray;">Seat Left: <?=$movie->seat?></p>	
+											<div style=" display: flex; justify-content: space-between; align-items: center !important;">
+												<p style="height: 10px !important;">⭐ 5.0</p>
+												<a href="<?=base_url('index.php/transaction/addcart/'.$movie->movie_code)?>"><button class="btn btn-outline-primary rounded-0 btn-sm"><span class="fa fa-shopping-cart" aria-hidden="true"></span></button></a>
+											</div>
+										</div>
+									</div>
+								<?php endforeach ?>
+							</tbody>
+					
+					</div>
+					
 				</div>
 				<div class="px-5 py-3">
-					<p>Fantasy</p>
-					<table class="table table-hover table-bordered" id="example" style="background-color: #eef9f0; border-radius: 10px; overflow: hidden;">
-						<thead style="background-color: orange; color:white;">
-							<tr>
-								<th>Movie Title</th>
-								<th>Movie Cover</th>
-								<th>Price</th>
-								<th>seat</th>
-								<th>Act.</th>
-							</tr>
-
-						</thead>
+					<div class="text-center font-weight-bold">Fantasy</div>
+					<div class="px-5 py-3 d-flex flex-row" style="gap: 25px;">
+						
 						<tbody style="background-color: white;">
-							<?php $no=0; foreach ($get_movie as $movie): if ($no == 6) break; if($movie->genre_name != "Fantasy") continue; $no++;?>
-								<tr>
-									<td><?=$movie->movie_title?></td>
-									<td><img src="<?=base_url('assets/gambar/'.$movie->movie_img)?>" style="width:40px"></td>
-									<td class="text-right">$<?=$movie->price?></td>
-									<td class="text-right"><?=$movie->seat?></td>
-									<td class="text-center"><a href="<?=base_url('index.php/transaction/addcart/'.$movie->movie_code)?>"><button class="btn btn-outline-primary rounded-0 btn-sm"><span class="fa fa-shopping-cart" aria-hidden="true"></span></button></a></td>
-								</tr>
-							<?php endforeach ?>
-						</tbody>
-					</table>
+								<?php $no=0; foreach ($get_movie as $movie): if ($no == 4) break; if($movie->genre_name != "Fantasy") continue; $no++;?>
+									<div class="card text-white bg-dark p-1" style="width: 15rem;">
+										<img src="<?=base_url('assets/gambar/'.$movie->movie_img)?>" class="card-img-top" alt="..." style="height: 320px;">
+										<div class="h-100"></div>
+											<div class="card-body">
+											<h5 class="card-title"><?=$movie->movie_title?></h5>
+											<p class="card-text" style="font-size: smaller; color: lightgray;"><span class="font-weight-bold">Ticket Price:</span> $<?=$movie->price?></p>
+											<p class="card-text" style="font-size: smaller; color: lightgray;">Seat Left: <?=$movie->seat?></p>	
+											<div style=" display: flex; justify-content: space-between; align-items: center !important;">
+												<p style="height: 10px !important;">⭐ 5.0</p>
+												<a href="<?=base_url('index.php/transaction/addcart/'.$movie->movie_code)?>"><button class="btn btn-outline-primary rounded-0 btn-sm"><span class="fa fa-shopping-cart" aria-hidden="true"></span></button></a>
+											</div>
+										</div>
+									</div>
+								<?php endforeach ?>
+							</tbody>
+					
+					</div>
+					
 				</div>
 				<div class="px-5 py-3">
-					<p>Horror</p>
-					<table class="table table-hover table-bordered" id="example" style="background-color: #eef9f0; border-radius: 10px; overflow: hidden;">
-						<thead style="background-color: orange; color:white;">
-							<tr>
-								<th>Movie Title</th>
-								<th>Movie Cover</th>
-								<th>Price</th>
-								<th>seat</th>
-								<th>Act.</th>
-							</tr>
-
-						</thead>
+					<div class="text-center font-weight-bold">Horror</div>
+					<div class="px-5 py-3 d-flex flex-row" style="gap: 25px;">
+						
 						<tbody style="background-color: white;">
-							<?php $no=0; foreach ($get_movie as $movie): if ($no == 6) break; if($movie->genre_name != "Horror") continue; $no++;?>
-								<tr>
-									<td><?=$movie->movie_title?></td>
-									<td><img src="<?=base_url('assets/gambar/'.$movie->movie_img)?>" style="width:40px"></td>
-									<td class="text-right">$<?=$movie->price?></td>
-									<td class="text-right"><?=$movie->seat?></td>
-									<td class="text-center"><a href="<?=base_url('index.php/transaction/addcart/'.$movie->movie_code)?>"><button class="btn btn-outline-primary rounded-0 btn-sm"><span class="fa fa-shopping-cart" aria-hidden="true"></span></button></a></td>
-								</tr>
-							<?php endforeach ?>
-						</tbody>
-					</table>
+								<?php $no=0; foreach ($get_movie as $movie): if ($no == 4) break; if($movie->genre_name != "Horror") continue; $no++;?>
+									<div class="card text-white bg-dark p-1" style="width: 15rem;">
+										<img src="<?=base_url('assets/gambar/'.$movie->movie_img)?>" class="card-img-top" alt="..." style="height: 320px;">
+										<div class="h-100"></div>
+											<div class="card-body">
+											<h5 class="card-title"><?=$movie->movie_title?></h5>
+											<p class="card-text" style="font-size: smaller; color: lightgray;"><span class="font-weight-bold">Ticket Price:</span> $<?=$movie->price?></p>
+											<p class="card-text" style="font-size: smaller; color: lightgray;">Seat Left: <?=$movie->seat?></p>	
+											<div style=" display: flex; justify-content: space-between; align-items: center !important;">
+												<p style="height: 10px !important;">⭐ 5.0</p>
+												<a href="<?=base_url('index.php/transaction/addcart/'.$movie->movie_code)?>"><button class="btn btn-outline-primary rounded-0 btn-sm"><span class="fa fa-shopping-cart" aria-hidden="true"></span></button></a>
+											</div>
+										</div>
+									</div>
+								<?php endforeach ?>
+							</tbody>
+					
+					</div>
+					
 				</div>
 			</div>
 			

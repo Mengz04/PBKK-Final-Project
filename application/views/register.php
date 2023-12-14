@@ -63,7 +63,7 @@
                       <div class="form-group">
                       <label for="level" class="control-label text-white">User Role</label>
                       <select type="text" name="level" required class="custom-select">
-                          <option>Customerr</option>
+                          <option>Customer</option>
                           <option>admin</option>
                       </select> 
                     </div>

@@ -25,11 +25,11 @@
     <script src="<?php echo base_url(); ?>assets/vendor/jquery/jquery.min.js"></script>
     
   </head>
-  <body>
+  <body">
     <div class="page">
       <!-- Main Navbar-->
       <header class="header">
-        <nav class="navbar">
+        <nav class="navbar palette-1">
           <div class="container-fluid py-3">
             <div class="navbar-holder d-flex align-items-center justify-content-between">
               <!-- Navbar Header-->
@@ -53,12 +53,12 @@
       
       <div class="page-content d-flex"> 
         <!-- Side Navbar -->
-        <nav class="side-navbar text-dark bg-white">
+        <nav class="palette-1 side-navbar text-dark" style="border-right: 2px rgba(255, 166, 0, 0.432) solid;">
           <!-- Sidebar Header-->
-          <div class="sidebar-header d-flex align-items-center">
+          <div class="sidebar-header d-flex align-items-center" style="border-bottom: 2px rgba(255, 166, 0, 0.432) solid;">
             <div class="avatar"><img src="<?php echo base_url(); ?>assets/img/avatar.png" alt="User Icon" class="img-fluid rounded-circle"></div>
             <div class="title">
-              <h1 class="h4 text-dark"><?= $this->session->userdata('fullname') ?></h1>
+              <h1 class="h4 text-white"><?= $this->session->userdata('fullname') ?></h1>
               <p><?= $this->session->userdata('level') ?></p>
             </div>
           </div>
@@ -122,7 +122,7 @@
                 </li>
           </ul>
         </nav>
-        <div class="content-inner">
+        <div class="content-inner palette-1">
             <?php
 
                 $this->load->view($content);

@@ -22,7 +22,7 @@ $(document).ready(function() {''
         changeDiv = document.querySelector('.sidebar-category');
     } else if (window.location.href.indexOf("dashboard") > -1) {
         changeDiv = document.querySelector('.sidebar-dashboard');
-    } else if (window.location.href.indexOf("book") > -1) {
+    } else if (window.location.href.indexOf("movie") > -1) {
         changeDiv = document.querySelector('.sidebar-books');
     } else if (window.location.href.indexOf("transaction") > -1) {
         changeDiv = document.querySelector('.sidebar-transaction');
