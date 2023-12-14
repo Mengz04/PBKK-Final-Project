@@ -35,41 +35,7 @@
 					
 				<?php endforeach ?>
 			</div>
-			<table class="table table-hover table-bordered" id="example" ui-options=ui-options="{
-		        &quot;paging&quot;: {
-		          &quot;enabled&quot;: true
-		        },
-		        &quot;filtering&quot;: {
-		          &quot;enabled&quot;: true
-		        },
-		        &quot;sorting&quot;: {
-		          &quot;enabled&quot;: true
-		        }}">
-				<thead style="background-color: orange; color:white;">
-					<tr>
-						<td>#</td>
-						<td>Customer's Name</td>
-						<td>Date</td>
-						<td>movie</td>
-						<td>Qty</td>
-						<td>Amount</td>
-						<td>Payment</td>
-					</tr></thead>
-					<tbody class="" style="background-color: white;">
-					<?php $no=0; foreach ($get_history as $history) : $no++;?>
-
-					<tr>
-						<td><?=$no?></td>
-						<td><?=$history->buyer_name?></td>
-						<td><?=$history->tgl?></td>
-						<td><?=$history->moviename?></td>
-						<td><?=$history->movie_qty?></td>
-						<td>$<?=number_format($history->total)?></td>
-						<td><?=$history->user_code?></td>
-					</tr>
-				<?php endforeach ?>
-				</tbody>
-			</table>
+			
 		</div>
 	</div>
 </div>
