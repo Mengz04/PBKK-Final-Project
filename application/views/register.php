@@ -22,13 +22,13 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
   </head>
   <body>
-    <div class="page login-page">
+    <div class="page login-page" >
       <div class="container d-flex align-items-center justify-content-center">
         <div class="form-holder has-shadow" >
           <div class="row" style="width: 100%">
             <!-- Form Panel    -->
             <div class="col-lg-12">
-              <div class="form d-flex align-items-center">
+              <div class="form d-flex align-items-center w-100 h-100">
                 <div class="content">
                   <?php
                         $notification = $this->session->flashdata('notif');
@@ -68,7 +68,7 @@
                       </select> 
                     </div>
                     <div class="d-flex flex-column justify-content-end align-items-center">
-                      <input type="submit" name="submit" class="btn btn-primary" value="Register" style="padding: 10px 20px; border-radius: 15px; width: 100%; background-color: orange; border: black;">
+                      <input type="submit" name="submit" class="btn btn-primary" value="Register" style="padding: 10px 20px; border-radius: 15px; width: 25%; background-color: orange; border: black;">
                       <a href="<?php echo base_url('index.php/admin/index') ?>" class="text-decoration-none mr-3 mt-3" style="color: orange;">Already have an account? Login here</a>
                     </div>
                     <!-- This should be submit button but I replaced it with <a> for demo purposes-->

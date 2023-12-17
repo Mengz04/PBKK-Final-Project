@@ -22,13 +22,21 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
   </head>
   <body>
-    <div class="page login-page" style="background-image: url(<?php echo base_url(); ?>assets/gambar/login-bg.jpg)">
+    <div class="page login-page">
       <div class="container d-flex align-items-center justify-content-center">
         <div class="form-holder has-shadow">
           
             <!-- Form Panel    -->
-            <div class="col-lg-12 page-trans">
-              <div class="form d-flex align-items-center">
+            <div class="w-100 page-trans d-flex align-items-center">
+
+              <div class="content d-flex align-items-center justify-content-center w-50 h-100 bg-light">
+                <div class="d-flex flex-column align-items-center mb-4" style="gap: 10px;">
+                      <div class="mb-2" style="height: 50px; width: 50px; border-radius: 5px; background-image: url(<?php echo base_url(); ?>assets/gambar/smooth.png); background-size: cover;"></div>
+                      <h3 class="text-center text-dark">Smooth Brains Cinema</h3>
+                </div>
+              </div>
+
+              <div class="form d-flex align-items-center w-100">
                 <div class="content">
                   <?php
                         $notification = $this->session->flashdata('message');
@@ -46,11 +54,11 @@
                     ?>
                   <form method="post" class="form-validate" action="<?php echo base_url('index.php/admin/proses_login') ?>">
 
-                  <div class="d-flex flex-column  align-items-center mb-4" style="gap: 10px;">
+                  <!-- <div class="d-flex flex-column  align-items-center mb-4" style="gap: 10px;">
                         <h2 class="text-center text-white">Welcome</h2>
                         <div class="mb-2" style="height: 50px; width: 50px; border-radius: 5px; background-image: url(<?php echo base_url(); ?>assets/gambar/smooth.png); background-size: cover;"></div>
                         <h2 class="text-center text-white">Smooth Brains</h2>
-                  </div>
+                  </div> -->
 
                     <div class="form-group">
                       <label for="login-username" class="label-material text-white">Username</label>
@@ -62,7 +70,7 @@
                     </div>
                     <div class="d-flex flex-column align-items-center gap-5">
                       
-                      <input type="submit" name="submit" class="btn btn-primary mb-3" value="Login" style = "padding:10px 20px; border-radius: 15px; width: 100%; background-color: orange; border: black;">
+                      <input type="submit" name="submit" class="btn btn-primary mb-3" value="Login" style = "padding:10px 20px; border-radius: 15px; width: 30%; background-color: orange; border: black;">
 
                       <a href="<?php echo base_url('index.php/admin/register') ?>" class="text-decoration-none fw-bold mr-3" style="color : orange;">Register New Account</a>
                     </div>
