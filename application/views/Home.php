@@ -1,4 +1,4 @@
-<header class="page-header palette-1" style="border-bottom: 2px rgba(175, 237, 255, 0.432) solid">
+<header class="page-header palette-1" style="border-bottom: 2px rgba(255, 166, 0, 0.432) solid">
 	<div class="container-fluid">
 	  	<h2 class="panel-title">Dashboard</h2>
 	</div>
@@ -8,14 +8,14 @@
 	<?php 
         if ($this->session->userdata('level') == 'admin') { ?>
 	<section class="dashboard-counts no-padding-bottom">
-	    <div class="container-fluid">
+	    <div class="container-fluid pt-4" style="background: url(<?=base_url('assets/gambar/table-bg.jpg')?>)">
 		
 
 	      <div class="row py-1 text-dark">
 	        <!-- Item -->
 	        <div class="col-xl-4 col-sm-4">
-				<div class="card rounded shadow">
-					<div class="card-body">
+				<div class="card rounded shadow card-home">
+					<div class="card-body" >
 						<div class="item d-flex align-items-center">
 							<div class="icon bg-violet"><i class="fa fa-book"></i></div>
 							<a href="<?php echo base_url('index.php/movie') ?>" class="text-secondary">
@@ -28,7 +28,7 @@
 	        </div>
 	        <!-- Item -->
 	        <div class="col-xl-4 col-sm-4">
-				<div class="card rounded shadow">
+				<div class="card rounded shadow card-home">
 					<div class="card-body">
 						<div class="item d-flex align-items-center">
 							<div class="icon bg-green"><i class="fa fa-dollar"></i></div>
@@ -42,7 +42,7 @@
 	        </div>
 	        <!-- Item -->
 	        <div class="col-xl-4 col-sm-4">
-				<div class="card rounded shadow">
+				<div class="card rounded shadow card-home">
 					<div class="card-body">
 						<div class="item d-flex align-items-center">
 							<div class="icon bg-red"><i class="fa fa-exchange"></i></div>
@@ -59,7 +59,7 @@
 		  <div class="row py-1 text-dark">
 	        <!-- Item -->
 	        <div class="col-xl-4 col-sm-4">
-				<div class="card rounded shadow">
+				<div class="card rounded shadow card-home">
 					<div class="card-body">
 						<div class="item d-flex align-items-center">
 							<div class="icon bg-warning"><i class="fa fa-bookmark" style="color: white;"></i></div>
@@ -73,7 +73,7 @@
 	        </div>
 	        <!-- Item -->
 	        <div class="col-xl-4 col-sm-4">
-				<div class="card rounded shadow">
+				<div class="card rounded shadow card-home">
 					<div class="card-body">
 						<div class="item d-flex align-items-center">
 							<div class="icon bg-gray"><i class="fa fa-user-secret"></i></div>
@@ -87,7 +87,7 @@
 	        </div>
 	        <!-- Item -->
 	        <div class="col-xl-4 col-sm-4">
-				<div class="card rounded shadow">
+				<div class="card rounded shadow card-home">
 					<div class="card-body">
 						<div class="item d-flex align-items-center">
 							<div class="icon bg-info"><i class="fa fa-th-large" style="color: white;"></i></div>
@@ -105,7 +105,7 @@
 	        
 	        <!--
 	        <div class="col-xl-4 col-sm-4">
-				<div class="card rounded-0 shadow">
+				<div class="card rounded-0 shadow card-home">
 					<div class="card-body">
 						<div class="d-flex align-items-center">
 							<div class="icon bg-green"><i class="fa fa-hourglass"></i></div>
