@@ -1,4 +1,29 @@
 /* your styles go here */
+@font-face {
+    font-family: regular;
+    src: url(../fonts/Fontspring-DEMO-modica-regular.otf);
+}
+
+@font-face {
+    font-family: bold-mod;
+    src: url(../fonts/Fontspring-DEMO-modica-black.otf);
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.font-bold{
+    font-family: bold-mod;
+    color: white;
+}
+
+.font-regular{
+    font-family: regular;
+    color: white;
+}
+
 .palette-1{
     background-color: rgb(15, 15, 15) !important;
     color: gray !important;
@@ -16,3 +41,40 @@
     background: rgba(0, 0, 0, 0.708);
 }
 
+.table-bg{
+    background-color: black;
+}
+
+*{
+    scroll-behavior: smooth !important;
+}
+
+.btn-cust a {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.btn-cust {
+    background-color: black !important;
+    border: 1px solid orange !important;
+    color: white;
+    width: 200px;
+    border-radius: 500px ;
+    padding: 10px 25px;
+    transition: all 0.1s;
+}
+
+.b2 {
+    width: 150px !important;
+    border-radius: 50px !important;
+    padding: 5px 5px !important;
+}
+
+.btn-cust:hover{
+    border: 1px solid white !important;
+}
+
+.table-dark{
+    background-color: black !important;
+    color: white !important;
+}

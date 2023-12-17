@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/vendor/bootstrap/css/bootstrap.min.css">
     <!-- Font Awesome CSS-->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/vendor/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
     <!-- Fontastic Custom icon font-->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/fontastic.css">
     <!-- theme stylesheet-->
