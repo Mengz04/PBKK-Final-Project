@@ -4,7 +4,7 @@
     color: gray !important;
 }
 .aaaa{
-    color: rgba(128, 128, 128, 0.468);
+    color: rgba(30, 30, 30, 0.712);
     border-bottom: 3px solid orange;
     /* background: url(<?=base_url('assets/gambar/bg-godzilla.webp')?>); */
     background: url(../gambar/bg-godzilla.webp);

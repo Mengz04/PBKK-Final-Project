@@ -129,8 +129,8 @@
 						
 						<tbody style="background-color: white;">
 							<?php $no=0; foreach ($get_movie as $movie): if ($no == 4) break; if($movie->genre_name != "Educational") continue; $no++;?>
-								<div class="card text-white bg-dark p-1" style="width: 15rem;">
-									<img src="<?=base_url('assets/gambar/'.$movie->movie_img)?>" class="card-img-top" alt="..." style="height: 320px;">
+								<div class="card text-white bg-dark p-1" style="width: 15rem; border-radius:8px;">
+									<img src="<?=base_url('assets/gambar/'.$movie->movie_img)?>" class="card-img-top" alt="..." style="height: 320px; border-bottom: 3px solid orange;">
 									<div class="h-100"></div>
 										<div class="card-body">
 										<h5 class="card-title"><?=$movie->movie_title?></h5>
@@ -154,8 +154,8 @@
 						
 						<tbody style="background-color: white;">
 								<?php $no=0; foreach ($get_movie as $movie): if ($no == 4) break; if($movie->genre_name != "Fiction") continue; $no++;?>
-									<div class="card text-white bg-dark p-1" style="width: 15rem;">
-										<img src="<?=base_url('assets/gambar/'.$movie->movie_img)?>" class="card-img-top" alt="..." style="height: 320px;">
+									<div class="card text-white bg-dark p-1" style="width: 15rem; border-radius:8px;">
+										<img src="<?=base_url('assets/gambar/'.$movie->movie_img)?>" class="card-img-top" alt="..." style="height: 320px; border-bottom: 3px solid orange;">
 										<div class="h-100"></div>
 											<div class="card-body">
 											<h5 class="card-title"><?=$movie->movie_title?></h5>
@@ -179,8 +179,8 @@
 						
 						<tbody style="background-color: white;">
 								<?php $no=0; foreach ($get_movie as $movie): if ($no == 4) break; if($movie->genre_name != "Fantasy") continue; $no++;?>
-									<div class="card text-white bg-dark p-1" style="width: 15rem;">
-										<img src="<?=base_url('assets/gambar/'.$movie->movie_img)?>" class="card-img-top" alt="..." style="height: 320px;">
+									<div class="card text-white bg-dark p-1" style="width: 15rem; border-radius:8px;">
+										<img src="<?=base_url('assets/gambar/'.$movie->movie_img)?>" class="card-img-top" alt="..." style="height: 320px; border-bottom: 3px solid orange;">
 										<div class="h-100"></div>
 											<div class="card-body">
 											<h5 class="card-title"><?=$movie->movie_title?></h5>
@@ -204,8 +204,8 @@
 						
 						<tbody style="background-color: white;">
 								<?php $no=0; foreach ($get_movie as $movie): if ($no == 4) break; if($movie->genre_name != "Horror") continue; $no++;?>
-									<div class="card text-white bg-dark p-1" style="width: 15rem;">
-										<img src="<?=base_url('assets/gambar/'.$movie->movie_img)?>" class="card-img-top" alt="..." style="height: 320px;">
+									<div class="card text-white bg-dark p-1" style="width: 15rem; border-radius:8px;">
+										<img src="<?=base_url('assets/gambar/'.$movie->movie_img)?>" class="card-img-top" alt="..." style="height: 320px; border-bottom: 3px solid orange;">
 										<div class="h-100"></div>
 											<div class="card-body">
 											<h5 class="card-title"><?=$movie->movie_title?></h5>

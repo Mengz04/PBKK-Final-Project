@@ -35,10 +35,10 @@
               <!-- Navbar Header-->
               <div class="navbar-header d-flex flex-row align-items-center justify-content-center" style="gap: 10px;">
                 <!-- Toggle Button--><a id="toggle-btn" href="#" class="menu-btn active"><div style="background-image:url(<?php echo base_url('/assets/gambar/next.png')?>); height: 30px; width: 30px; background-size: cover;"></div></a>
-                <!-- icon --> <div class="rounded-circle" style="background-image: url(<?php echo base_url('/assets/gambar/smooth.png')?>); height:50px; width: 50px; background-size: cover; border : 2px orange solid;"></div>
+                <!-- icon --> <div class="rounded-circle" style="background-image: url(<?php echo base_url('/assets/gambar/clapperboard.png')?>); height:50px; width: 50px; background-size: cover; border : 2px orange solid;"></div>
                 <!-- Navbar Brand --><a href="#" class="navbar-brand">
-                  <div class="brand-text brand-big"><span>Smooth Brains Movie Ticket Store</span></div>
-                  <div class="brand-text brand-small">Smooth Brains Movie Ticket Store</div></a>
+                  <div class="brand-text brand-big"><span>Cinema Ticket Store</span></div>
+                  <div class="brand-text brand-small">Cinema Ticket Store</div></a>
                 
               </div>
               <!-- Navbar Menu -->
@@ -116,7 +116,7 @@
                     }
                 ?>
                 <li>
-                  <div style="height : 110px; margin: 10% 7px 0 7px; border-radius: 13px; background-size: cover; background-image: url(<?php echo base_url(); ?>assets/img/book1.jpg); border: 2px solid #ffa5008c;">
+                  <div style="height : 110px; margin: 10% 7px 0 7px; border-radius: 13px; background-size: cover; background-image: url(<?php echo base_url(); ?>assets/gambar/bg-avenger.jpg); border: 2px solid #ffa5008c;">
 
                   </div>
                 </li>
