@@ -19,43 +19,27 @@
 				
 			} ?>
 		<?php endif  ?>
-		<div class="card rounded-0 mt-3">
-			<div class="card-header">
+		<div class="card rounded-2 mt-3" style="background-color : black; border: 2px solid orange; border-radius : 15px; overflow:hidden; ">
+			<div class="card-header" style="background-color : black;">
 					<a href="#add" data-toggle="modal" class="btn btn-warning btn-sm rounded-3 pull-right p-2" style="border: none; color: white;"><i class="fa fa-plus"></i> Add New genre</a>
 			</div>
 			<div class="card-body">
-				<table class="table table-hover table-bordered" id="example" style="background-color: #eef9f0; border-radius: 10px; overflow: hidden;" ui-options=ui-options="{
-						&quot;paging&quot;: {
-						&quot;enabled&quot;: true
-						},
-						&quot;filtering&quot;: {
-						&quot;enabled&quot;: true
-						},
-						&quot;sorting&quot;: {
-						&quot;enabled&quot;: true
-						}}">
-					<thead style="background-color: orange; color:white;">
-						<tr>
-							<td>#</td>
-							<td>Genre Code</td>
-							<td>Genre Name</td>
-							<td>Action</td>
-						</tr></thead>
-						<tbody style="background-color: white;">
-						<?php $no=0; foreach ($get_genre as $kat) : $no++;?>
-
-						<tr>
-							<td><?=$no?></td>
-							<td>#CA<?=$kat->genre_code?></td>
-							<td><?=$kat->genre_name?></td>
-							<td class="text-center">
+			<div class="d-flex flex-column w-100" style="gap: 25px; background: url(<?=base_url('assets/gambar/bg-avenger.jpg')?>); border-radius: 10px;">
+				<div class="gradient py-3 d-flex flex-column" style="gap: 25px;">
+				<?php $no=0; foreach ($get_genre as $kat) : $no++;?>
+					
+						<div class=" p-3 px-4 d-flex align-items-center justify-content-between" style="background-color:rgba(30, 30, 30, 0.712); border-radius: 10px; color:white;">
+							<h2 class="m-0 px-2" style="border-left:5px solid orange"><?=$kat->genre_name?></h2>
+							<div>
 								<a href="#edit" onclick="edit('<?=$kat->genre_code?>')" class="btn btn-primary  btn-sm rounded-0" data-toggle="modal">Edit</a>
 								<a href="<?=base_url('index.php/category/hapus/'.$kat->genre_code)?>" onclick="return confirm('Are you sure you want to delete this genre?')" class="btn btn-danger btn-sm rounded-0">Delete</a>
-							</td>
-						</tr>
-					<?php endforeach ?>
-					</tbody>
-				</table>
+							</div>
+						</div>
+					
+				<?php endforeach ?>
+				</div>
+			</div>
+				
 			</div>
 		</div>
 

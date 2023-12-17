@@ -2,12 +2,15 @@
 	<div class="container-fluid">
 	  	<h2 class="panel-title">Dashboard</h2>
 	</div>
+	
 </header> 
 <div class="main-content">
 	<?php 
         if ($this->session->userdata('level') == 'admin') { ?>
 	<section class="dashboard-counts no-padding-bottom">
 	    <div class="container-fluid">
+		
+
 	      <div class="row py-1 text-dark">
 	        <!-- Item -->
 	        <div class="col-xl-4 col-sm-4">
@@ -223,5 +226,5 @@
 			</div>
 			
 		<?php }?>
-	
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </div>

@@ -3,5 +3,16 @@
     background-color: rgb(15, 15, 15) !important;
     color: gray !important;
 }
+.aaaa{
+    color: rgba(128, 128, 128, 0.468);
+    border-bottom: 3px solid orange;
+    /* background: url(<?=base_url('assets/gambar/bg-godzilla.webp')?>); */
+    background: url(../gambar/bg-godzilla.webp);
+}
 
+.gradient{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.708);
+}
 

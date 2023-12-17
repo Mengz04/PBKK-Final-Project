@@ -29,7 +29,7 @@
 							<p> <?=$history->moviename?> | <?=$history->user_code?> | $<?=number_format($history->total)?></p>
 							
 						</div>
-						<img src="./source/images/qr-code.png" alt="" style="max-height: 150px; background-color:white;">
+						<img src="<?=base_url('assets/gambar/qr-code.png')?>" alt="" style="max-height: 150px; background-color:white;">
 					</div>
 				</div>
 					

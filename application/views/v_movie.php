@@ -22,17 +22,17 @@
   background-size: cover;">
 				<div class="d-flex flex-wrap justify-content-between" style="gap: 5px;">
 					<?php $no=0; foreach ($get_movie as $movie) : $no++;?>
-						<div class="card text-white bg-dark p-2" style="width: 14rem;">
-							<img src="<?=base_url('assets/gambar/'.$movie->movie_img)?>" class="card-img-top" alt="..." style="height:300px;">
+						<div class="card text-white bg-dark p-2" style="width: 14rem; border-radius:8px;">
+							<img src="<?=base_url('assets/gambar/'.$movie->movie_img)?>" class="card-img-top" alt="..." style="height:300px; border-bottom: 3px solid orange;">
 							<div class="h-100"></div>
 							<div class="card-body-2 p-2">
-								<h5 class="card-title"><?=$movie->movie_title?></h5>
-								<p class="card-text" style="font-size: smaller; color: lightgray;"><?=$movie->year?></p>
-								<p style= "margin:0">Genre : <?=$movie->genre_name?></p>
-								<p style= "margin:0">Publisher : <?=$movie->publisher?></p>
-								<p style= "margin:0">Director : <?=$movie->director?></p>
-								<p style= "margin:0">Seat : <?=$movie->seat?></p>
-								<div style=" display: flex; justify-content: space-between; align-items: center !important;">
+								<h5 class="card-title mt-1 mb-0"><?=$movie->movie_title?></h5>
+								<p class="card-text" style="font-size: smaller; color: gray; "><?=$movie->year?></p>
+								<p style= "margin:0; color: lightgray;">Genre : <?=$movie->genre_name?></p>
+								<p style= "margin:0; color: lightgray;">Publisher : <?=$movie->publisher?></p>
+								<p style= "margin:0; color: lightgray;">Director : <?=$movie->director?></p>
+								<p style= "margin:0; color: lightgray;">Seat : <?=$movie->seat?></p>
+								<div class="mt-1" style=" display: flex; justify-content: space-between; align-items: center !important;">
 									<p style="height: 10px !important;">⭐ 5.0</p>
 									<div>
 										<a href="#edit" onclick="edit('<?=$movie->movie_code?>')" class="btn btn-primary btn-sm rounded-0" data-toggle="modal"><i class="fa fa-pencil"></i></a>
