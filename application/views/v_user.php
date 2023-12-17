@@ -7,7 +7,7 @@
 <div class="table-agile-info p-5">
 	<div class="panel panel-default">
 
-		<div class="container-fluid" >
+		<div class="container-fluid">
 			<?php if ($this->session->flashdata('message')!=null) {
 			echo "<br><div class='alert alert-success alert-dismissible fade show' role='alert'>"
 				.$this->session->flashdata('message')."<button type='button' class='close' data-dismiss='alert' aria-label='Close'>
@@ -15,7 +15,7 @@
 				</button> </div>";
 			} ?>
 			<!-- <br><a href="#add" data-toggle="modal" class="btn btn-primary pull-left"><i class="fa fa-plus"></i> Add New System User</a><br> -->
-			<table class="table table-hover table-bordered" id="example" style="background-color: #eef9f0; border-radius: 10px; overflow: hidden;" ui-options=ui-options="{
+			<table class="table table-hover table-bordered table-user" id="example" style="background-color: #eef9f0; border-radius: 10px; overflow: hidden; border: 1px solid orange;" ui-options=ui-options="{
 			        &quot;paging&quot;: {
 			          &quot;enabled&quot;: true
 			        },
@@ -33,7 +33,7 @@
 						<td>Level</td>
 						<td>Action</td>
 					</tr></thead>
-				<tbody style="background-color: white;">
+				<tbody style="background-color: black; color:white !important;">
 					<?php $no=0; foreach ($get_user as $user) : $no++;?>
 
 					<tr>
